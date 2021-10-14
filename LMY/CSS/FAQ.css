@@ -1,0 +1,19 @@
+﻿@charset "utf-8";
+
+.FAQ h1{
+	text-decoration:underline;
+	margin-left:150px;
+}
+
+.FAQ a{
+	text-decoration:none;
+}
+
+.FAQ div{
+	float:left;
+	padding:10px 150px 0px 150px;
+}
+
+
+
+

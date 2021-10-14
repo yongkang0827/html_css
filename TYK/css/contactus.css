@@ -1,0 +1,32 @@
+﻿#content{
+	padding:50px 20% 20% 10%;
+}
+
+#contact img{
+	float:left;
+	width:120px;
+	margin-top:20px;
+	margin-bottom:50px;
+}
+
+#field{
+	width:35%;
+	height:25px;
+}
+
+#submit{
+	background-color:black;
+	color:white;
+	height:5%;
+	width:10%;
+	padding:10px;
+	min-width:170px;
+}
+
+#contact{
+	position:absolute;
+}
+
+li{
+	list-style-type:none;
+}

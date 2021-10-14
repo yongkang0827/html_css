@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>login</title>
+<link rel="stylesheet" href="../CSS/reset.css" type="text/css"/>
+<link rel="stylesheet" href="../CSS/asignmentcss.css" type="text/css"/>
+<link rel="stylesheet" href="../CSS/content.css" type="text/css"/>
+<!--<script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="unusual menu.js"></script>!-->
+</head>
+<body onLoad="Total()">
+	<nav class="fix">
+		<div class="top">
+			<a href="../../TYK/HTML/Home.html" style="float: left"><img src="../../CXC/IMG/Puadike2.png" alt="logo" height="68" width="289"/></a>
+			<div class="box">
+				<ul class="topRight">
+					<li style="right: 9%"><a href="../../TYK/HTML/Login.html"><span>LOGIN</span></a></li>
+					<li style="right: -1%"><a href="../../CXC/HTML/Cart.html"><span>CART</span></a></li>
+				</ul> 
+			</div>
+		</div>
+		<div class="btm">
+			<ul>
+				<li><a href="../../LMY/HTML/Product Categories.html">men</a></li>
+				<li><a href="../../LMY/HTML/Product Categories.html">women</a></li>
+				<li><a href="../../LMY/HTML/Product Categories.html">kids</a></li>
+			</ul>
+			<form name="search" class="search">
+				<input type="text" placeholder="Search">
+			</form>
+		</div>
+		<br/><br/><br/><br/><br/>
+	</nav>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+	<div class="content">
+		<h2>Your Cart</h2>
+		<br/>
+		<div class="item">
+			<img style="float: left; padding: 3%" alt="" src="../IMG/555088-Nike Air Jordan 1 Retro High OG.jpg" height="widthpx" width="15%"/>
+			<form class="form" id="cart" action="Shipping Delivery.html">
+				<input type="number" value="1" max="5" min="1" onChange="Total()" id="qty">
+				<br/>
+				<select name="size">
+					<option value="6" >UK 6(EU 40)</option>
+					<option value="7" >UK 7</option>
+					<option value="7.5" >UK 7.5</option>
+					<option value="8" >UK 8</option>
+					<option value="8.5" >UK 8.5</option>
+					<option value="9" >UK 9</option>
+					<option value="9.5" >UK 9.5</option>
+					<option value="10" >UK 10</option>
+					<option value="10.5" >UK 10.5</option>
+					<option value="11">UK 11</option>
+				</select>
+			</form>
+			<h5>JORDAN 1 RETRO HIGH</h5>
+			<h5>COLOR : GYM RED / BLACK / WHITE</h5>
+			<h5>RM 1865.00</h5>
+		</div>
+		<div class="money">
+		<br/>
+			<p id="total" style="font-size: 2em ; float: left">Total</p>
+			<button form="cart" style="float: right ; position: static">DELIVERY</button>
+		</div>
+	</div>
+	<script>
+		Total();
+		function Total(){
+			var qty = document.getElementById("qty").value;
+			var total = eval(qty) * 1865;
+			document.getElementById("total").innerHTML = "Total = RM" + total;
+		}
+	</script>
+		<footer>
+		<br/><br/>
+		<div class="icon">
+			<ul>
+				<li style="padding-left:36%"><a href="https://www.facebook.com/"><img src="../../CXC/IMG/facebook icon.png" alt="Facebook" width="50" height="50" /></a></li>
+				<li><a href="https://www.youtube.com/"><img src="../../CXC/IMG/youtube icon.png" alt="Youtube" width="50" height="50" /></a></li>
+				<li><a href="https://www.instagram.com/?hl=en"><img src="../../CXC/IMG/instagram icon.png" alt="Instagram" width="50" height="50"/></a></li>
+				<li style="padding-right:30%"><a href="https://twitter.com/login"><img src="../../CXC/IMG/twitter icon.png" alt="Twitter" width="50" height="50"/></a></li>
+			</ul>
+			<br/><br/><br/>
+			<hr/>
+		</div>
+		<br/>
+		<div class="flower">
+			<div class="fleft">
+			<br/><br/>
+			<ul>
+				<li><a href="../../LKW/HTML/About Us.html">About Us</a></li>
+				<li><a href="../../LKW/HTML/Term and Condition.html">Term and Condition</a></li>
+			</ul>
+			</div>
+			<div class="fmid">
+				<br/>
+				<ul>
+					<li><a href="../../LKW/HTML/Store Location.html">Store Location</a></li>
+					<li><a href="../../LMY/HTML/Shoe Size Chart.html">Shoe Size Chart</a></li>
+					<li><a href="../../CXC/HTML/Cart.html">Cart</a></li>
+					<li><a href="../../LMY/HTML/FAQ.html">FAQ</a></li>
+					<li><a href="../../CXC/HTML/Track Order.html">Track Order</a></li>
+				</ul>
+			</div>
+			<div class="fright">
+				<br/>
+				<ul>
+					<li><a href="../../TYK/HTML/Profile.html">MemberShip</a></li>
+					<li><a href="../../TYK/HTML/Register.html">Registration</a></li>
+					<li><a href="../../LKW/HTML/Feedback.html">Feedback</a></li>
+					<li><a href="../../TYK/HTML/Contact Us.html">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+		<br/><br/><br/><br/><br/><br/><br/>
+	</footer>
+</body>
+
+</html>

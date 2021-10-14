@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8">
+<link href="../CSS/Feedback Form.css" rel="stylesheet">
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico">
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111">
+<title>Puadike Site Feedback Form</title>
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="../../CXC/CSS/asignmentcss.css" type="text/css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+</head>
+<body>
+<nav class="fix">
+		<div class="top">
+			<a href="../../TYK/HTML/Homepage.html" style="float: left"><img src="../../CXC/IMG/Puadike2.png" alt="logo" height="68" width="289"/></a>
+			<div class="box">
+				<ul class="topRight">
+					<li style="right: 9%"><a href="../../TYK/HTML/Login.html"><span>LOGIN</span></a></li>
+					<li style="right: -1%"><a href="../../CXC/HTML/Cart.html"><span>CART</span></a></li>
+				</ul> 
+			</div>
+		</div>
+		<div class="btm">
+			<ul>
+				<li><a href="../../LMY/HTML/Product Categories.html">men</a></li>
+				<li><a href="../../LMY/HTML/Product Categories.html">women</a></li>
+				<li><a href="../../LMY/HTML/Product Categories.html">kids</a></li>
+			</ul>
+			<form name="search" class="search">
+				<input type="text" placeholder="Search">
+			</form>
+		</div>
+		<br/><br/><br/><br/><br/>
+	</nav>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<form id="feedBackForm" action="../../LKW/HTML/About Us.html" method="get" >
+<a href="../../TYK/HTML/Home.html" style="position:relative;top:0px;left:490px; ">x</a>
+<div class="rating">
+<h5 id="starRating">Please Rate Your Puadike.com Experience</h5>
+<input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+<input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+<input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+<input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+<input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+</div>
+<script src="https://static.codepen.io/assets/editor/live/css_reload-5619dc0905a68b2e6298901de54f73cefe4e079f65a75406858d92924b4938bf.js"></script>
+<!--Purpose List-->
+<div class="purposeOpt">
+	<h5 id="purposeHead">What is the purpose of your visit today?</h5>
+	<select name="purposeList" id="purpose">
+	<option value="">Please Select One</option> 
+	<option value="shopping">Shopping</option>
+	<option value="browsing">Browsing/Research Products</option>
+	<option value="feedback">Give feedback</option>
+	</select>
+</div>
+<!--Accomplish List-->
+<div class="accomplishOpt">
+	<h5 id="accomplishHead">Did You Accomplish Your Primary Purpose on Puadike.com Today?</h5>
+	<select name="purposeList" id="purpose">
+	<option value="">Please Select One</option> 
+	<option value="yes">Yes</option>
+	<option value="no">No</option>
+	</select>
+</div>
+<!--Text Area List-->
+<div class="textFeedBack">
+	<h5 id="textFeedBackHead">What Would You Like to Share With Us?</h5>
+	<textarea name="custExp" id="commBox"></textarea>
+</div>
+<div class="information"><p>We are unable to respond to requests submitted here.
+If you need assistance with your Nike Product or Services please click <a href="tel:5656565">here</a> to contact us.</p>
+<input type="submit" onclick ="submitFunction()"value="Submit Feedback" style="position:relative;top:auto;left:300px;">
+</div>
+<script>
+function submitFunction(){
+window.alert("Your feedback was submitted successfully =)");
+}
+</script>
+</form> 
+<footer style="position: relative ;top: 50px">
+		<br/><br/>
+		<div class="icon">
+			<ul>
+				<li style="padding-left:36%"><a href="https://www.facebook.com/"><img src="../../CXC/IMG/facebook icon.png" alt="Facebook" width="50" height="50" /></a></li>
+				<li><a href="https://www.youtube.com/"><img src="../../CXC/IMG/youtube icon.png" alt="Youtube" width="50" height="50" /></a></li>
+				<li><a href="https://www.instagram.com/?hl=en"><img src="../../CXC/IMG/instagram icon.png" alt="Instagram" width="50" height="50"/></a></li>
+				<li style="padding-right:30%"><a href="https://twitter.com/login"><img src="../../CXC/IMG/twitter icon.png" alt="Twitter" width="50" height="50"/></a></li>
+			</ul>
+			<br/><br/><br/>
+			<hr/>
+		</div>
+		<br/>
+		<div class="flower">
+			<div class="fleft">
+			<br/><br/>
+			<ul>
+				<li><a href="../../LKW/HTML/About Us.html">About Us</a></li>
+				<li><a href="../../LKW/HTML/Term and Condition.html">Term and Condition</a></li>
+			</ul>
+			</div>
+			<div class="fmid">
+				<br/>
+				<ul>
+					<li><a href="../../LKW/HTML/Store Location.html">Store Location</a></li>
+					<li><a href="../../LMY/HTML/Shoe Size Chart.html">Shoe Size Chart</a></li>
+					<li><a href="../../CXC/HTML/Cart.html">Cart</a></li>
+					<li><a href="../../LMY/HTML/FAQ.html">FAQ</a></li>
+					<li><a href="../../CXC/HTML/Track Order.html">Track Order</a></li>
+				</ul>
+			</div>
+			<div class="fright">
+				<br/>
+				<ul>
+					<li><a href="../../TYK/HTML/Profile.html">MemberShip</a></li>
+					<li><a href="../../TYK/HTML/Register.html">Registration</a></li>
+					<li><a href="../../LKW/HTML/Feedback.html">Feedback</a></li>
+					<li><a href="../../TYK/HTML/Contact Us.html">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+		<br/><br/><br/><br/><br/><br/><br/>
+	</footer>
+</body>
+</html>

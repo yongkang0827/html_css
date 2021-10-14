@@ -1,0 +1,17 @@
+﻿#content{
+	padding:20px 10% 10px 10%;
+}
+
+#customerEmail , #password{
+	width:35%;
+	height:25px;
+}
+
+#submit{
+	background-color:black;
+	color:white;
+	height:5%;
+	min-width:160px;
+	width:10%;
+	padding:10px;
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>login</title>
+<link rel="stylesheet" href="../CSS/reset.css" type="text/css"/>
+<link rel="stylesheet" href="../CSS/asignmentcss.css" type="text/css"/>
+<link rel="stylesheet" href="../CSS/content.css" type="text/css"/>
+<style>
+	.delivery > li:nth-of-type(1){
+		border:  1px solid black;
+		border-bottom: 4px solid #54C5FC;
+	}
+	.delivery > li:nth-of-type(2){
+		border-bottom: 1px solid black;
+		border:  1px solid black;
+	}
+	.delivery > li:hover{
+		border-bottom: 4px solid #54C5FC;
+	}
+</style>
+</head>
+
+<body>
+	<nav class="fix">
+		<div class="top">
+			<a href="../../TYK/HTML/Homepage.html" style="float: left"><img src="../../CXC/IMG/Puadike2.png" alt="logo" height="68" width="289"/></a>
+			<div class="box">
+				<ul class="topRight">
+					<li style="right: 9%"><a href="../../TYK/HTML/Login.html"><span>LOGIN</span></a></li>
+					<li style="right: -1%"><a href="../../CXC/HTML/Cart.html"><span>CART</span></a></li>
+				</ul> 
+			</div>
+		</div>
+		<div class="btm">
+			<ul>
+				<li><a href="../../LMY/HTML/Product Categories.html">men</a></li>
+				<li><a href="../../LMY/HTML/Product Categories.html">women</a></li>
+				<li><a href="../../LMY/HTML/Product Categories.html">kids</a></li>
+			</ul>
+			<form name="search" class="search">
+				<input type="text" placeholder="Search">
+			</form>
+		</div>
+		<br/><br/><br/><br/><br/>
+	</nav>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+	<div class="content">
+		<h2>Shipping</h2>
+		<ul class="delivery">
+			<li>DELIVERY</li>
+			<li><a href="Shipping Puadike Store.html">PUADIKE STORE</a></li>
+			<br/><br/><br/><br/><br/>
+		</ul>
+		<form action="Payment.html" class="form1" name="location">
+			<div class="float">
+				<input type="text" name="first name" placeholder="First Name *" style="width: 47% ; margin-left: 0 ; margin-right: 0" required/>
+				<input type="text" name="last name" placeholder="Last Name *" style="width: 47% ; margin-left: 6% ; margin-right: 0s" required/>
+			</div>
+			<br/><br/><br/><br/>
+			<input type="text" name="Address 1" placeholder="Address Line 1 *" required/>
+			<br/><br/>
+			<input type="text" name="Address 2"	placeholder="Address Line 2 (optional)"/>
+			<br/><br/>
+			<input type="text" name="Address 3" placeholder="Address Line 3 (optional)"/>
+			<br/><br/>
+			<select id="state" onchange="City()" >
+				<option>State *</option>
+				<option value="Johor">Johor</option>
+				<option value="Kedah">Kedah</option>
+				<option value="Kelantan">Kelantan</option>
+				<option value="Malacca">Malacca</option>
+				<option value="Negeri Sembilan">Negeri Sembilan</option>
+				<option value="Pahang">Pahang</option>
+				<option value="Penang">Penang</option>
+				<option value="Perlis">Perlis</option>
+				<option value="Sabah">Sabah</option>
+				<option value="Sarawak">Sarawak</option>s
+				<option value="Selangor">Selangor</option>
+				<option value="Terengganu">Terengganu</option>
+				<option value="Wilayah Persekutuan (Kuala Lumpur)">Wilayah Persekutuan (Kuala Lumpur)</option>
+				<option value="Wilayah Persekutuan (Labuan)">Wilayah Persekutuan (Labuan)</option>
+				<option value="Wilayah Persekutuan (Putrajaya)">Wilayah Persekutuan (Putrajaya)</option>
+            </select >
+			<br/><br/>
+            <select id="city" style="width: 47% ; margin-left: 0 ; margin-right: 0" onChange="Postcode()">
+            	<option>City *</option>
+            </select>
+			
+			<script defer>
+				function City(){
+                if (document.getElementById("state").value == "Johor"){
+						document.getElementById("city").innerHTML= '<option>City *</option><option value="">Johor Bahru</option><option value="Kulai District">Kulai District</option><option value="Muar">Muar</option><option value="Pontian District">Pontian District</option><option value="Pasir Gudang">Pasir Gudang</option>'; 
+				} else if (document.getElementById("state").value == "Kedah"){
+					document.getElementById("city").innerHTML= '<option>City *</option><option value="Alor Setar">Alor Setar</option><option value="Sungai Petani">Sungai Petani</option><option value="Pokok Sena">Pokok Sena</option><option value="Jitra">Jitra</option><option value="Kuala Kedah">Kuala Kedah</option>';
+				} else if (document.getElementById("state").value == "Kelantan"){
+					document.getElementById("city").innerHTML= '<option>City *</option><option value="Alor Setar">Alor Setar</option><option value="Sungai Petani">Sungai Petani</option><option value="Pokok Sena">Pokok Sena</option><option value="Jitra">Jitra</option><option value="Kuala Kedah">Kuala Kedah</option>';
+				} else if (document.getElementById("state").value == "Malacca"){
+					document.getElementById("city").innerHTML= '<option>City *</option><option value="Ayer Keroh">Ayer Keroh</option><option value="Tanjung Kling">Tanjung Kling</option><option value="Durian Tunggal">Durian Tunggal</option><option value="Pekan Asahan">Pekan Asahan</option><option value="Lubuk China">Lubuk China</option>';
+				}else if (document.getElementById("state").value == "Negeri Sembilan"){
+					document.getElementById("city").innerHTML= '<option>City *</option><option value="Seremban">Seremban</option><option value="Port Dickson">Port Dickson</option><option value="Nilai">Nilai</option><option value="Tampin">Tampin</option><option value="Bahau">Bahau</option>';
+				}else if (document.getElementById("state").value == "Pahang"){
+					document.getElementById("city").innerHTML= '<option>City *</option><option value="Kuantan">Kuantan</option><option value="Temerloh">Temerloh</option><option value="Pekan">Pekan</option><option value="Kuala Lipis">Kuala Lipis</option><option value="Bentong">Bentong</option>';
+				}else if (document.getElementById("state").value == "Penang"){
+					document.getElementById("city").innerHTML= '<option>City *</option><option value="George Town">George Town</option><option value="Perai">Perai</option><option value="Butterworth">Butterworth</option><option value="Nibong Tebal">Nibong Tebal</option><option value="Air Itam">Air Itam</option>';
+				}else if (document.getElementById("state").value == "Perlis"){
+					document.getElementById("city").innerHTML= '<option>City *</option><option value="Kangar">Kangar</option><option value="Kuala Perlis">Kuala Perlis</option><option value="Arau">Arau</option><option value="Padang Besar">Padang Besar</option><option value="Simpang Ampat">Simpang Ampat</option>';
+				}else if (document.getElementById("state").value == "Sabah"){
+					document.getElementById("city").innerHTML= '<option>City *</option><option value="Kota Kinabalu">Kota Kinabalu</option><option value="Tawau">Tawau</option><option value="Sandakan">Sandakan</option><option value="Lahat Datu">Lahat Datu</option><option value="Keningau">Keningau</option>';
+				}else if (document.getElementById("state").value == "Sarawak"){
+					document.getElementById("city").innerHTML= '<option>City *</option><option value="Kuching">Kuching</option><option value="Miri">Miri</option><option value="Sibu">Sibu</option><option value="Bintulu">Bintulu</option><option value="Serian">Serian</option>';
+				}else if (document.getElementById("state").value == "Selangor"){
+					document.getElementById("city").innerHTML= '<option>City *</option><option value="Batu Caves">Batu Caves</option><option value="Shah Alam">Shah Alam</option><option value="Petaling Jaya">Petaling Jaya</option><option value="Klang">Klang</option><option value="Subang Jaya">Subang Jaya</option><option value="Kajang">Kajang</option>';
+				}else if (document.getElementById("state").value == "Terengganu"){
+					document.getElementById("city").innerHTML= '<option>City *</option><option value="Kuala Terengganu">Kuala Terengganu</option><option value="KerTeh">KerTeh</option><option value="Jerteh">Jerteh</option><option value="Kuala Berang">Kuala Berang</option><option value="Paka">Paka</option>';
+				}else if (document.getElementById("state").value == "Wilayah Persekutuan (Kuala Lumpur)"){
+					document.getElementById("city").innerHTML= '<option>City *</option><option value="Kuala Lumpur">Kuala Lumpur</option>';
+				}else if (document.getElementById("state").value == "Wilayah Persekutuan (Labuan)"){
+					document.getElementById("city").innerHTML= '<option>City *</option><option value="Labuan">Labuan</option>';
+				}else if (document.getElementById("state").value == "Wilayah Persekutuan (Putrajaya)"){
+					document.getElementById("city").innerHTML= '<option>City *</option><option value="Putrajaya">Putrajaya</option>';
+				}
+			}
+			</script>
+			<select style="width: 47% ; margin-left: 5.49% ; margin-right: 0s" id="postcode" name="postcode">
+				<option>Postcode *</option>
+			</select>
+			<script>
+				function Postcode(){
+					if (document.getElementById("city").value == "Batu Caves"){
+						document.getElementById("postcode").innerHTML = '<option>Postcode *</option><option value="83400">83400</option>';
+					}else if (document.getElementById("city").value == "Shah Alam"){
+						document.getElementById("postcode").innerHTML = '<option>Postcode *</option><option value="40594">40594</option>';
+					}else if (document.getElementById("city").value == "Petaling Jaya"){
+						document.getElementById("postcode").innerHTML = '<option>Postcode *</option><option value="47400">47400</option>';
+					}else if (document.getElementById("city").value == "Klang"){
+						document.getElementById("postcode").innerHTML = '<option>Postcode *</option><option value="41200">41200</option>';
+					}else if (document.getElementById("city").value == "Subang Jaya"){
+						document.getElementById("postcode").innerHTML = '<option>Postcode *</option><option value="47500">47500</option>';
+					}else if (document.getElementById("city").value == "Kajang"){
+						document.getElementById("postcode").innerHTML = '<option>Postcode *</option><option value="43000">43000</option>';
+					}
+				}
+			</script>
+			<br/><br/><br/>
+			<button type="submit" style="float: right">Payment</button>
+		</form>
+	</div>
+		<footer>
+		<br/><br/>
+		<div class="icon">
+			<ul>
+				<li style="padding-left:36%"><a href="https://www.facebook.com/"><img src="../../CXC/IMG/facebook icon.png" alt="Facebook" width="50" height="50" /></a></li>
+				<li><a href="https://www.youtube.com/"><img src="../../CXC/IMG/youtube icon.png" alt="Youtube" width="50" height="50" /></a></li>
+				<li><a href="https://www.instagram.com/?hl=en"><img src="../../CXC/IMG/instagram icon.png" alt="Instagram" width="50" height="50"/></a></li>
+				<li style="padding-right:30%"><a href="https://twitter.com/login"><img src="../../CXC/IMG/twitter icon.png" alt="Twitter" width="50" height="50"/></a></li>
+			</ul>
+			<br/><br/><br/>
+			<hr/>
+		</div>
+		<br/>
+		<div class="flower">
+			<div class="fleft">
+			<br/><br/>
+			<ul>
+				<li><a href="../../LKW/HTML/About Us.html">About Us</a></li>
+				<li><a href="../../LKW/HTML/Term and Condition.html">Term and Condition</a></li>
+			</ul>
+			</div>
+			<div class="fmid">
+				<br/>
+				<ul>
+					<li><a href="../../LKW/HTML/Store Location.html">Store Location</a></li>
+					<li><a href="../../LMY/HTML/Shoe Size Chart.html">Shoe Size Chart</a></li>
+					<li><a href="../../CXC/HTML/Cart.html">Cart</a></li>
+					<li><a href="../../LMY/HTML/FAQ.html">FAQ</a></li>
+					<li><a href="../../CXC/HTML/Track Order.html">Track Order</a></li>
+				</ul>
+			</div>
+			<div class="fright">
+				<br/>
+				<ul>
+					<li><a href="../../TYK/HTML/Profile.html">MemberShip</a></li>
+					<li><a href="../../TYK/HTML/Register.html">Registration</a></li>
+					<li><a href="../../LKW/HTML/Feedback.html">Feedback</a></li>
+					<li><a href="../../TYK/HTML/Contact Us.html">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+		<br/><br/><br/><br/><br/><br/><br/>
+	</footer>
+</body>
+
+</html>

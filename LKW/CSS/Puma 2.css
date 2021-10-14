@@ -1,0 +1,85 @@
+﻿@charset "utf-8";
+body{
+	background-color:gray;
+}
+.wholeShoesSpecs .shoesPhotos{
+	width:50%;
+	float:left;
+}
+.wholeShoesSpecs .shoesPhotos table{
+	position:absolute;
+	top:0px;
+	left:200px;
+}
+.wholeShoesSpecs .shoesSpecs{
+	width:45%;
+	float:right;
+	position:absolute;
+	top:0px;
+	right:75px;
+}
+.wholeShoesSpecs .shoesSpecs .NameAndPrices h2{
+	clear:both;
+	float:right;
+	position:relative;
+	right:50px;
+}
+
+.wholeShoesSpecs .shoesSpecs .NameAndPrices h4{
+	clear:both;
+	float:right;
+	position:relative;
+	right:50px;
+}
+.wholeShoesSpecs .shoesSpecs .SizeAndAddToCart span{
+	clear:right;
+	float:left;
+	position:relative;
+	right:50px;
+}
+.wholeShoesSpecs .shoesSpecs .SizeAndAddToCart a{
+	float:right;
+	position:relative;
+	right:50px;
+}
+.wholeShoesSpecs .shoesSpecs .SizeAndAddToCart form{
+	clear:both;
+	float:right;
+	position:relative;
+	right:100px;
+}
+.wholeShoesSpecs .shoesSpecs .shoesDescriptions {
+	clear:both;
+	float:right;
+	width:320px;
+	position:relative;
+	right:100px;
+}
+.wholeShoesSpecs .shoesSpecs .DeliveryAndReturns{
+	clear:right;
+	float:right;
+	width:320px;
+	position:relative;
+	right:100px;
+} 
+
+.wholeShoesSpecs .shoesPhotos table img{
+	float:left;
+	width:300px;
+	height:300px;
+}
+.moreProdsSlideShows{
+	clear:both;
+	width:50%;
+	float:left;
+	position:absolute;
+	top:1000px;
+	left:150px;
+}
+.moreProdsSlideShows img{
+	width:100%;
+}
+.moreProdsSlideShows div figcaption{
+	text-align:center;
+	
+}

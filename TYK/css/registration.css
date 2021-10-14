@@ -1,0 +1,17 @@
+﻿#content{
+	padding:10px 10% 10px 10%;
+}
+
+input#field{
+		width:35%;
+		height:25px;
+}
+
+input#submit{
+	background-color:black;
+	color:white;
+	height:5%;
+	min-width:230px;
+	width:10%;
+	padding:10px;
+}

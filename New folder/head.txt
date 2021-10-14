@@ -1,0 +1,22 @@
+<nav class="fix">
+		<div class="top">
+			<a href="" style="float: left"><img src="../../Puadike2.png" alt="logo" height="68" width="289"/></a>
+			<div class="box">
+				<ul class="topRight">
+					<li style="right: 9%"><a href="Login.html"><span>LOGIN</span></a></li>
+					<li style="right: -1%"><a href="Cart.html"><span>CART</span></a></li>
+				</ul> 
+			</div>
+		</div>
+		<div class="btm">
+			<ul>
+				<li><a href="Categories.html">men</a></li>
+				<li><a href="Categories.html">women</a></li>
+				<li><a href="Categories.html">kids</a></li>
+			</ul>
+			<form name="search" class="search">
+				<input type="text" placeholder="Search">
+			</form>
+		</div>
+		<br/><br/><br/><br/><br/>
+	</nav>

@@ -1,0 +1,23 @@
+﻿#content{
+	padding:70px 10% 10px 10%;
+}
+
+input#field{
+	width:35%;
+	height:25px;
+}
+
+input#submit{
+	background-color:black;
+	color:white;
+	height:5%;
+	width:10%;
+	min-width:100px;
+	padding:10px;
+}
+
+#edit{
+	background:transparent;
+	font-size:x-small;
+	bottom:0;
+}

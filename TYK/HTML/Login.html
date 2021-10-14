@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Login</title>
+<link href="../css/login.css" rel="stylesheet" type="text/css" />
+<link href="../../CXC/CSS/asignmentcss.css" rel="stylesheet" type="text/css" />
+<script type ="text/javascript">
+			function validForm () {
+			 var custEmail = document.form.customerEmail.value;
+			 var custPassword = document.getElementById("password").value;
+			if(custEmail == "abc@gmail.com" && custPassword == "Ab123456789")
+			{
+				
+				window.alert("Welcome to PUADIKE. MR ABC");
+
+				return true;
+			}
+			else{
+				window.alert("Email and password not matched.");
+				
+				return false;
+			}	
+			
+		}
+</script>
+</head>
+
+<body>
+<nav class="fix">
+		<div class="top">
+			<a href="../../TYK/HTML/Homepage.html" style="float: left"><img src="../../CXC/IMG/Puadike2.png" alt="logo" height="68" width="289"/></a>
+			<div class="box">
+				<ul class="topRight">
+					<li style="right: 9%"><a href="../../TYK/HTML/Login.html"><span>LOGIN</span></a></li>
+					<li style="right: -1%"><a href="../../CXC/HTML/Cart.html"><span>CART</span></a></li>
+				</ul> 
+			</div>
+		</div>
+		<div class="btm">
+			<ul>
+				<li><a href="../../LMY/HTML/Product Categories.html">men</a></li>
+				<li><a href="../../LMY/HTML/Product Categories.html">women</a></li>
+				<li><a href="../../LMY/HTML/Product Categories.html">kids</a></li>
+			</ul>
+			<form name="search" class="search">
+				<input type="text" placeholder="Search"/>
+			</form>
+		</div>
+		<br/><br/><br/><br/><br/>
+	</nav><br/>
+<br/><br/><br/><br/><br/><br/>
+<div id="content">
+<h2>Login to PUADIKE</h2>
+<form   method="get" id="form" name="form" >
+<label>E-mail</label> 
+<br/>
+<input type="email"  name="customerEmail" id="customerEmail"   placeholder="E-mail" required/>
+<br/>
+<br/>
+<label>Password</label>
+<br/>
+<input type="password" name="password" id="password" placeholder="Password" required/>
+<br/>
+<br/>
+<h5><a href="">Forgot Password?</a></h5>
+<input type="submit" name="Sign In" value="Sign In" id="submit"  onclick="validForm()" />
+<br/>
+<a href="register.html"><h5>No Account ? Create an Account now</h5>
+</a>
+</form>
+</div>
+</div>
+<footer>
+		<br/><br/>
+		<div class="icon">
+			<ul>
+				<li style="padding-left:36%"><a href="https://www.facebook.com/"><img src="../../CXC/IMG/facebook icon.png" alt="Facebook" width="50" height="50" /></a></li>
+				<li><a href="https://www.youtube.com/"><img src="../../CXC/IMG/youtube icon.png" alt="Youtube" width="50" height="50" /></a></li>
+				<li><a href="https://www.instagram.com/?hl=en"><img src="../../CXC/IMG/instagram icon.png" alt="Instagram" width="50" height="50"/></a></li>
+				<li style="padding-right:30%"><a href="https://twitter.com/login"><img src="../../CXC/IMG/twitter icon.png" alt="Twitter" width="50" height="50"/></a></li>
+			</ul>
+			<br/><br/><br/>
+			<hr/>
+		</div>
+		<br/>
+		<div class="flower">
+			<div class="fleft">
+			<br/><br/>
+			<ul>
+				<li><a href="../../LKW/HTML/About Us.html">About Us</a></li>
+				<li><a href="../../LKW/HTML/Term and Condition.html">Term and Condition</a></li>
+			</ul>
+			</div>
+			<div class="fmid">
+				<br/>
+				<ul>
+					<li><a href="../../LKW/HTML/Store Location.html">Store Location</a></li>
+					<li><a href="../../LMY/HTML/Shoe Size Chart.html">Shoe Size Chart</a></li>
+					<li><a href="../../CXC/HTML/Cart.html">Cart</a></li>
+					<li><a href="../../LMY/HTML/FAQ.html">FAQ</a></li>
+					<li><a href="../../CXC/HTML/Track Order.html">Track Order</a></li>
+				</ul>
+			</div>
+			<div class="fright">
+				<br/>
+				<ul>
+					<li><a href="../../TYK/HTML/Profile.html">MemberShip</a></li>
+					<li><a href="../../TYK/HTML/Register.html">Registration</a></li>
+					<li><a href="../../LKW/HTML/Feedback.html">Feedback</a></li>
+					<li><a href="../../TYK/HTML/Contact Us.html">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+		<br/><br/><br/><br/><br/><br/><br/>
+	</footer>
+</body>
+
+</html>

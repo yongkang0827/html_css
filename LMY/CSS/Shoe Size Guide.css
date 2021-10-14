@@ -1,0 +1,22 @@
+﻿@charset "utf-8";
+
+h1{
+	text-decoration:underline;
+	margin-left:150px;
+}
+
+table{
+	border-collapse:collapse;
+	margin:50px 0px 0px 50px;
+	font-size:20px;
+}
+
+th{
+	min-width:100px;
+}
+
+td{
+	line-height:50px;
+	min-width:75px;
+	text-align:center;
+}

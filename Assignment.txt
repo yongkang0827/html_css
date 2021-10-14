@@ -1,0 +1,21 @@
+1.	Homepage.html
+2.	Membership Registration.html
+3.	Membership Profile.html
+4.	Login.html
+5.	Contact Us.html
+6.	About us.html
+7.	FAQ.html
+8.	Feedback Form.html
+9.	Shoe Size Guide Page.html
+10.	Add to Cart.html
+11.	Payment.html
+12.	Shipping Delivery.html
+13.	Term and Conditions.html
+14.	Store Location.html
+15.	Billing .html
+16.	Track Order.html
+17.	Product Categories.html
+18.	Product Gallery.html
+19.	Product Descriptions / Specification.html
+20.	Promotion Page.html
+21.	Shipping Collect In Store.html

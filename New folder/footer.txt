@@ -1,0 +1,43 @@
+<footer>
+		<br/><br/>
+		<div class="icon">
+			<ul>
+				<li style="padding-left:36%"><a href="https://www.facebook.com/"><img src="facebook icon.png" alt="Facebook" width="50" height="50" /></a></li>
+				<li><a href="https://www.youtube.com/"><img src="youtube icon.png" alt="Youtube" width="50" height="50" /></a></li>
+				<li><a href="https://www.instagram.com/?hl=en"><img src="instagram icon.png" alt="Instagram" width="50" height="50"/></a></li>
+				<li style="padding-right:30%"><a href="https://twitter.com/login"><img src="twitter icon.png" alt="Twitter" width="50" height="50"/></a></li>
+			</ul>
+			<br/><br/><br/>
+			<hr/>
+		</div>
+		<br/>
+		<div class="flower">
+			<div class="fleft">
+			<br/><br/>
+			<ul>
+				<li><a href="About Us.html">About Us</a></li>
+				<li><a href="Term and Condition.html">Term and Condition</a></li>
+			</ul>
+			</div>
+			<div class="fmid">
+				<br/>
+				<ul>
+					<li><a href="Store Location.html">Store Location</a></li>
+					<li><a href="Shoe Size Chart.html">Shoe Size Chart</a></li>
+					<li><a href="Cart.html">Cart</a></li>
+					<li><a href="FAQ.html">FAQ</a></li>
+					<li><a href="Track Order.html">Track Order</a></li>
+				</ul>
+			</div>
+			<div class="fright">
+				<br/>
+				<ul>
+					<li><a href="Profile.html">MemberShip</a></li>
+					<li><a href="Register.html">Registration</a></li>
+					<li><a href="Feedback.html">Feedback</a></li>
+					<li><a href="Contact Us.html">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+		<br/><br/><br/><br/><br/><br/><br/>
+	</footer>

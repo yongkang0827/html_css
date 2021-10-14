@@ -1,0 +1,216 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<title>Store Locations of Puadike In Malaysia</title>
+<link href="../CSS/Store Locations.css" rel="stylesheet"/>
+<script src="../JAVASCRIPT/Store Locations.js"></script>
+<link rel="stylesheet" href="../../CXC/CSS/asignmentcss.css" type="text/css"/>
+</head>
+<body>
+<nav class="fix">
+		<div class="top">
+			<a href="../../TYK/HTML/Homepage.html" style="float: left"><img src="../../CXC/IMG/Puadike2.png" alt="logo" height="68" width="289"/></a>
+			<div class="box">
+				<ul class="topRight">
+					<li style="right: 9%"><a href="../../TYK/HTML/Login.html"><span>LOGIN</span></a></li>
+					<li style="right: -1%"><a href="../../CXC/HTML/Cart.html"><span>CART</span></a></li>
+				</ul> 
+			</div>
+		</div>
+		<div class="btm">
+			<ul>
+				<li><a href="../../LMY/HTML/Product Categories.html">men</a></li>
+				<li><a href="../../LMY/HTML/Product Categories.html">women</a></li>
+				<li><a href="../../LMY/HTML/Product Categories.html">kids</a></li>
+			</ul>
+			<form name="search" class="search">
+				<input type="text" placeholder="Search">
+			</form>
+		</div>
+		<br/><br/><br/><br/><br/>
+	</nav>
+	<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<h1>Store Locations</h1>
+<h4 id="currentLocation">Click the button below to get your current position</h4>
+<button onclick="getLocation()" id="currentPostion">Your Current Location</button>
+<!-- Add hypertext link that will jump to a certain marker on the google maps -->
+<h4 style="clear:both;float:left">Stores Near You</h4>
+<button onclick="firstStoreLocation()" class="storeLocations">PUADIKE STORE PAVILION BUKIT BINTANG<br/>5.01.01, Pavilion, 168, Jalan Bukit Bintang, Bukit Bintang,<br/>55100 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur</button>
+<button onclick="secondStoreLocation()" class="storeLocations">PUADIKE STORE SUNWAY PYRAMID<br/>3, Jalan PJS 11/15, Bandar Sunway,<br/>46150 Petaling Jaya, Selangor</button>
+<button onclick="thirdStoreLocation()" class="storeLocations">PUADIKE STORE NU SENTRAL<br/>L2-04, Nu Sentral, 201, Jalan Tun Sambanthan, Brickfields,<br/>50470 Kuala Lumpur, Federal Territory of Kuala Lumpur</button>
+<button onclick="fourthStoreLocation()" class="storeLocations">PUADIKE STORE SUNWAY VELOCITY MALL<br/>L2-04, Nu Sentral, 201, Jalan Tun Sambanthan, Brickfields,<br/>50470 Kuala Lumpur, Federal Territory of Kuala Lumpur</button>
+<button onclick="fifthStoreLocation()" class="storeLocations">PUADIKE STORE MID VALLEY<br/>L2-04, Nu Sentral, 201, Jalan Tun Sambanthan, Brickfields,<br/>50470 Kuala Lumpur, Federal Territory of Kuala Lumpur</button>
+<button onclick="sixthStoreLocation()" class="storeLocations">PUADIKE STORE SETAPAK CENTRAL MALL<br/>L2-04, Nu Sentral, 201, Jalan Tun Sambanthan, Brickfields,<br/>50470 Kuala Lumpur, Federal Territory of Kuala Lumpur</button>
+<div id="mapholder"></div>
+
+<script src="https://maps.google.com/maps/api/js?key=AIzaSyC4x9-uez-_XXT599z9vRhST_bVRUtASIg"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+<script>
+var x = document.getElementById("currentLocation");		
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition, showError);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  var lat = position.coords.latitude;
+  var lon = position.coords.longitude;
+  var latlon = new google.maps.LatLng(lat, lon);
+  var firstStoreLocation = {lat: 3.149726, lng: 101.712045};
+  var secondStoreLocation = {lat: 3.072834, lng: 101.606314};
+  var thirdStoreLocation = {lat: 3.133354, lng: 101.686821};
+  var mapholder = document.getElementById('mapholder')
+  mapholder.style.height = '500px';
+  mapholder.style.width = '50%';
+  var myOptions = {
+    center:latlon,zoom:10,
+    mapTypeId:google.maps.MapTypeId.ROADMAP,
+    mapTypeControl:false,
+    navigationControlOptions:{style:google.maps.NavigationControlStyle.MEDIUM}
+  }
+    
+  var map = new google.maps.Map(document.getElementById("mapholder"), myOptions);
+  var marker = new google.maps.Marker({position:latlon,map:map,title:"You are here!"});
+  var firstStore = new google.maps.Marker({
+    position: firstStoreLocation,
+    map: map,
+    title: 'Puadike Store Pavilion Bukit Bintang'
+  });
+    var secondStore = new google.maps.Marker({
+    position: secondStoreLocation,
+    map: map,
+    title: 'Puadike Store Sunway Pyramid'
+  });
+    var thirdStore = new google.maps.Marker({
+    position: thirdStoreLocation,
+    map: map,
+    title: 'Puadike Store Nu Sentral Mall'
+  });
+  firstStore.addListener('click', function(){
+  map.setZoom(14);
+  map.setCenter(firstStore.getPosition());
+  });
+  var firstStoreDescription = '<div id="firstStoreAddress">'+
+      '<h1 id="firstHeading" class="Headings">Puadike Store Pavilion Bukit Bintang</h1>'+
+      '<div class="bodyContent">'+
+      '<p><b>Puadike Store Pavilion Bukit Bintang</b><br/>' +
+      '5.01.01, Pavilion, 168, Jalan Bukit Bintang, Bukit Bintang,'+
+      '55100 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur</p>'
+      '</div>'+
+      '</div>';
+  var infowindowforPavilion = new google.maps.InfoWindow({
+  content:	firstStoreDescription
+  });
+  firstStore.addListener('click', function() {
+  infowindowforPavilion.open(map, firstStore);
+  });
+  //
+  secondStore.addListener('click', function(){
+  map.setZoom(14);
+  map.setCenter(secondStore.getPosition());
+  });
+  var secondStoreDescription = '<div id="secondStoreAddress">'+
+      '<h1 id="secondHeading" class="Headings">Puadike Store Sunway Pyramid</h1>'+
+      '<div class="bodyContent">'+
+      '<p><b>Puadike Store Sunway Pyramid</b><br/>' +
+      '3, Jalan PJS 11/15, Bandar Sunway, '+
+      '46150 Petaling Jaya, Selangor</p>'
+      '</div>'+
+      '</div>';
+  var infowindowforSunwayPyramid = new google.maps.InfoWindow({
+  content:	secondStoreDescription
+  });
+  secondStore.addListener('click', function() {
+  infowindowforSunwayPyramid.open(map, secondStore);
+  });
+  //
+  thirdStore.addListener('click', function(){
+  map.setZoom(14);
+  map.setCenter(thirdStore.getPosition());
+  });
+  var thirdStoreDescription = '<div id="thirdStoreAddress">'+
+      '<h1 id="thirdHeading" class="Headings">Puadike Store Nu Sentral</h1>'+
+      '<div class="bodyContent">'+
+      '<p><b>Puadike Store Nu Sentral</b><br/>' +
+      'L2-04, Nu Sentral, 201, Jalan Tun Sambanthan, Brickfields,'+
+      '50470 Kuala Lumpur, Federal Territory of Kuala Lumpur</p>'
+      '</div>'+
+      '</div>';
+  var infowindowforNuSentral = new google.maps.InfoWindow({
+  content:	thirdStoreDescription
+  });
+  thirdStore.addListener('click', function() {
+  infowindowforNuSentral.open(map, thirdStore);
+  });
+
+
+}
+function showError(error) {
+  switch(error.code) {
+    case error.PERMISSION_DENIED:
+      x.innerHTML = "User denied the request for Geolocation."
+      break;
+    case error.POSITION_UNAVAILABLE:
+      x.innerHTML = "Location information is unavailable."
+      break;
+    case error.TIMEOUT:
+      x.innerHTML = "The request to get user location timed out."
+      break;
+    case error.UNKNOWN_ERROR:
+      x.innerHTML = "An unknown error occurred."
+      break;
+  }
+}
+</script>
+<footer style="position: relative ;top: 100px">
+		<br/><br/>
+		<div class="icon">
+			<ul>
+				<li style="padding-left:36%"><a href="https://www.facebook.com/"><img src="../../CXC/IMG/facebook icon.png" alt="Facebook" width="50" height="50" /></a></li>
+				<li><a href="https://www.youtube.com/"><img src="../../CXC/IMG/youtube icon.png" alt="Youtube" width="50" height="50" /></a></li>
+				<li><a href="https://www.instagram.com/?hl=en"><img src="../../CXC/IMG/instagram icon.png" alt="Instagram" width="50" height="50"/></a></li>
+				<li style="padding-right:30%"><a href="https://twitter.com/login"><img src="../../CXC/IMG/twitter icon.png" alt="Twitter" width="50" height="50"/></a></li>
+			</ul>
+			<br/><br/><br/>
+			<hr/>
+		</div>
+		<br/>
+		<div class="flower">
+			<div class="fleft">
+			<br/><br/>
+			<ul>
+				<li><a href="../../LKW/HTML/About Us.html">About Us</a></li>
+				<li><a href="../../LKW/HTML/Term and Condition.html">Term and Condition</a></li>
+			</ul>
+			</div>
+			<div class="fmid">
+				<br/>
+				<ul>
+					<li><a href="../../LKW/HTML/Store Location.html">Store Location</a></li>
+					<li><a href="../../LMY/HTML/Shoe Size Chart.html">Shoe Size Chart</a></li>
+					<li><a href="../../CXC/HTML/Cart.html">Cart</a></li>
+					<li><a href="../../LMY/HTML/FAQ.html">FAQ</a></li>
+					<li><a href="../../CXC/HTML/Track Order.html">Track Order</a></li>
+				</ul>
+			</div>
+			<div class="fright">
+				<br/>
+				<ul>
+					<li><a href="../../TYK/HTML/Profile.html">MemberShip</a></li>
+					<li><a href="../../TYK/HTML/Register.html">Registration</a></li>
+					<li><a href="../../LKW/HTML/Feedback.html">Feedback</a></li>
+					<li><a href="../../TYK/HTML/Contact Us.html">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+		<br/><br/><br/><br/><br/><br/><br/>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,118 @@
+@charset "utf-8";
+/* CSS Document */
+.content{
+	width: 65%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.item {
+	border: 1px solid black;
+	font-size: 1em;
+	width: 100%;
+}
+.item , .billing::after {
+	content: " ";
+	clear: both;
+	display: table;
+}
+.form {
+	float: right;
+	margin-top: 3%;
+	margin-right: 5%;
+}
+.form1 > button , .billing > a , .order > button , .payment > button , .money button{
+	height: 30px;
+	width: 15%;
+	background-color: orangered;
+	color: white;
+	border-radius: 4px;
+	border: none;
+}
+.form1 > button:hover , .billing > a:hover , .order > button:hover , .payment > button:hover , .money button:hover{
+	color: black;
+}
+.form1 {
+	clear: both;
+	margin-top: 3%;
+}
+.form > * {
+	width: 100%;
+	height: 40px;
+	padding: 0px 10px;
+	box-sizing: border-box;
+	border-radius: 4px;
+	border: 2px solid #7E7D7D;
+}
+.form1 input, .form1 select , .order > input , .payment input{
+	width: 100%;
+	height: 40px;
+	padding: 0px 10px;
+	box-sizing: border-box;
+	border-radius: 4px;
+	border: 2px solid #7E7D7D;
+}
+.billing {
+	border: 1px solid black;
+	padding: 1%;
+}
+.address {
+	float: left;
+	line-height: 15px;
+}
+.table {
+	border: 1px solid black;
+	border-collapse: collapse;
+	width: 100%;
+	text-align: center;
+}
+.table td, .table th{
+	border: 1px solid black;
+}
+.table td{
+	height: 50px;
+}
+.store > li{
+	box-sizing: border-box;
+	border: 1px solid black;
+	width: 33.33%;
+	padding: 1%;
+}
+.store > li > a{
+	display: block;
+}
+.store > li > a > p{
+	font-size: 0.8em;
+	color: rgb(100,100,100);
+}
+.delivery{
+	width: 100%;
+	padding: 0px;
+}
+.delivery > li {
+	display: block;
+	box-sizing: border-box;
+	width: 50%;
+	height: 50px;
+	float: left;
+	text-align: center;
+	font-size: 1.5em;
+}
+.delivery > li > a{
+	height: 50px;
+	display: block;
+}
+.float > *{
+	float: left;
+}
+.location *{
+	font-size: 0.9em;
+}
+.money p{
+	border-radius: 4px;
+	border: 2px solid #7E7D7D;
+	padding: 2%;
+	width: 40%;
+}
+.store > li:hover{
+	background-color: rgba(199,199,199,0.52);
+}

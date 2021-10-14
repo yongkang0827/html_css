@@ -1,0 +1,137 @@
+﻿@charset "utf-8";
+/* CSS Document */
+body {
+  background: white;
+}
+
+form#feedBackForm{
+	background-color:silver;
+	width:500px;
+	margin-left:auto;
+	margin-right:auto;
+}
+h5#starRating{
+	position:absolute;
+	top:0;
+	font-weight:bolder;
+	text-align:justify;
+} 
+.rating {
+  width: 400px;
+  height: 25px;
+  margin: 0 auto;
+  padding: 40px 50px;
+  border: 1px hidden solid #CCCCCC;
+  position:relative;
+}
+.rating a.close{
+   position:absolute;
+   top:0;
+   right:0;
+  }
+.rating label {
+  float: right;
+  position: relative;
+  right:200px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.rating label:not(:first-of-type) {
+  padding-right: 2px;
+}
+.rating label:before {
+  content: "\2605";
+  font-size: 42px;
+  color: #CCCCCC;
+  line-height: 1;
+}
+.rating input {
+  display: none;
+}
+.rating input:checked ~ label:before, .rating:not(:checked) > label:hover:before, .rating:not(:checked) > label:hover ~ label:before {
+  color: #F9DF4A;
+}
+
+/*Option of Purpose Selection List*/
+div.purposeOpt > h5#purposeHead , div.purposeOpt select#purpose{
+	position:relative;
+	top:-50px;
+	text-align:justify;
+}
+
+.purposeOpt{
+  width: 400px;
+  height: 25px;
+  margin: 0 auto;
+  padding: 40px 50px;
+  border: 1px solid hidden #CCCCCC;
+}
+.purposeOpt option{
+  float: right;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+/*Option of Accomplish Selection List*/
+div.accomplishOpt > h5#accomplishHead , div.accomplishOpt select#purpose{
+	position:relative;
+	top:-50px;
+	text-align:justify;
+}
+
+.accomplishOpt{
+  width: 400px;
+  height: 25px;
+  margin: 0 auto;
+  padding: 40px 50px;
+  border: 1px solid hidden #CCCCCC;
+}
+.accomplishOpt option{
+  float: right;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+/*Text area*/
+div.textFeedBack > h5#textFeedBackHead, div.textFeedBack textarea#commBox{
+	position:relative;
+	top:-50px;
+	text-align:justify;
+}
+.textFeedBack{
+  width: 400px;
+  height: 50px;
+  margin: 0 auto;
+  padding: 40px 50px;
+  border: 1px solid hidden #CCCCCC;
+}
+.textFeedBack textarea#commBox{
+  float: right;
+  position: relative;
+  top:50px;
+  right:50px;
+  width: 350px;
+  height: 50px;
+  cursor: pointer;
+}
+/*Information*/
+.information{
+  width: 400px;
+  height: 50px;
+  margin: 0 auto;
+  padding: 40px 50px;
+  border: 1px solid hidden #CCCCCC;
+}
+.information > *	{
+	text-align:justify;
+	position:relative;
+	bottom:50px;
+}
+
+
+
+
+

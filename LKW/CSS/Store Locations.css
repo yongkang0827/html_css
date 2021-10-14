@@ -1,0 +1,29 @@
+﻿@charset "utf-8";
+body{
+	background-color:white;
+}
+
+button#currentPostion{
+	width:100px;
+	height:50px;
+	float:left;
+	background-color:white;
+}
+button.storeLocations{
+	clear:both;
+	float:left;
+	width:550px;
+	height:100px;
+	padding:0;
+
+}
+
+#mapholder{
+	float:right;
+	position:absolute;
+	top:230px;
+	left:551px;
+	padding:50px;
+	margin-right:100px;
+	margin-bottom:0px;
+}
